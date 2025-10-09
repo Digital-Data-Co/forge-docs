@@ -1,6 +1,6 @@
 # Task Templates
 
-Templates define how to run Semaphore tasks. Currently the following task types are supported:
+Templates define how to run Forge tasks. Currently the following task types are supported:
 
 * [Ansible](./ansible.md)
 * [Terraform/OpenTofu](./terraform.md)

@@ -1,8 +1,8 @@
 # Schedules
 
-The schedule function in Semaphore allows to automate the execution of templates (e.g. playbook runs) at predefined intervals. This feature allows to implement routine automation tasks, such as regular backups, compliance checks, system updates, and more.
+The schedule function in Forge allows to automate the execution of templates (e.g. playbook runs) at predefined intervals. This feature allows to implement routine automation tasks, such as regular backups, compliance checks, system updates, and more.
 
-Make sure to restart the Semaphore service after making changes for them to take effect.
+Make sure to restart the Forge service after making changes for them to take effect.
 
 ## Setup and configuration
 
@@ -13,7 +13,7 @@ By default, the schedule feature operates in the UTC timezone. However, this can
 You can change the timezone by updating the configuration file or setting an environment variable:
 
 1. **Using the configuration file**:  
-    Add or update the `timezone` field in your Semaphore configuration file:
+    Add or update the `timezone` field in your Forge configuration file:
     ```json
     {
       "schedule": {
@@ -23,16 +23,16 @@ You can change the timezone by updating the configuration file or setting an env
     ```
 
 2. **Using an environment variable**:  
-    Set the `SEMAPHORE_SCHEDULE_TIMEZONE` environment variable:
+    Set the `FORGE_SCHEDULE_TIMEZONE` environment variable:
     ```bash
-    export SEMAPHORE_SCHEDULE_TIMEZONE="America/New_York"
+    export FORGE_SCHEDULE_TIMEZONE="America/New_York"
     ```
 
 For a list of valid timezone values, refer to the [IANA Time Zone Database](https://www.iana.org/time-zones).
 
 ### Accessing the schedule feature
 
-1. Log in to your Ansible Semaphore web interface
+1. Log in to your Forge web interface
 2. Navigate to the "Schedule" tab in the main navigation menu
 3. Click the "New Schedule" button in the top right corner to create a new schedule
 

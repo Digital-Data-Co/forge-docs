@@ -5,7 +5,7 @@
 
 # History
 
-The History screen in Semaphore provides a comprehensive view of all task executions within your project. This feature allows you to track, analyze the execution history of your tasks, providing valuable insights into your automation workflows.
+The History screen in Forge provides a comprehensive view of all task executions within your project. This feature allows you to track, analyze the execution history of your tasks, providing valuable insights into your automation workflows.
 
 ![](<../../.gitbook/assets/project_history.webp>)
 
@@ -24,7 +24,7 @@ The History page displays a chronological list of all task executions, including
 
 ### Accessing History
 
-1. Navigate to your project in Semaphore
+1. Navigate to your project in Forge
 2. Click on "History" tab
 3. View the list of all task executions
 <!-- 
@@ -91,7 +91,7 @@ From the history view, you can:
 
 ## Task Retention
 
-Semaphore allows you to configure how long task history is retained:
+Forge allows you to configure how long task history is retained:
 
 1. **Default Behavior**
    - All tasks are stored in the database
@@ -101,7 +101,7 @@ Semaphore allows you to configure how long task history is retained:
    - Set maximum tasks per template
    - Configure via environment variable:
      ```bash
-     SEMAPHORE_MAX_TASKS_PER_TEMPLATE=30
+     FORGE_MAX_TASKS_PER_TEMPLATE=30
      ```
    - Or via config.json:
      ```json

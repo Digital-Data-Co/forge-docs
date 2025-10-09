@@ -5,7 +5,7 @@
 
 # Ansible
 
-Using Semaphore UI you can run Ansible playbooks. To do this, you need to create an **Ansible Playbook** Template.
+Using Forge you can run Ansible playbooks. To do this, you need to create an **Ansible Playbook** Template.
 
 1. Go go **Task Templates** section, click on **New Template** and then **Ansible Playbook**.
 
@@ -42,7 +42,7 @@ This type of template should be used to create [artifacts](https://en.wikipedia.
 
 ![](<../../../.gitbook/assets/template\_new\_build\_ipad (1).png>)
 
-Semaphore doesn't support artifacts out-of-box, it only provides task versioning. You should implement the artifact creation yourself. Read the article [CI/CD](../../administration-guide/cicd.md) to know how to do this.
+Forge doesn't support artifacts out-of-box, it only provides task versioning. You should implement the artifact creation yourself. Read the article [CI/CD](../../administration-guide/cicd.md) to know how to do this.
 
 ### Deploy
 

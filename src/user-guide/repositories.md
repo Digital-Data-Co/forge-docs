@@ -4,7 +4,7 @@ A Repository is a place to store and manage Ansible content like playbooks and r
 
 ![](<../.gitbook/assets/repository.webp>)
 
-Semaphore understands Repositories that are:
+Forge understands Repositories that are:
   * a local file system (`/path/to/the/repo`)
   * a local Git repository (`file://`)
   * a remote Git Repository that is accessed over HTTPS (`https://`), SSH(`ssh://`)
@@ -13,7 +13,7 @@ Semaphore understands Repositories that are:
 All Task Templates require a Repository in order to run.
 
 ## Authentication
-If you are using a remote Repository that requires authentication, you will need to configure a key in the **Key Store** section of Semaphore.
+If you are using a remote Repository that requires authentication, you will need to configure a key in the **Key Store** section of Forge.
 
 For remote Repositories that use SSH, you will need to use your SSH key in the **Key Store**.
 
@@ -22,7 +22,7 @@ For Remote Repositories that do not have authentication, you can create a Key wi
 ## Creating a New Repository
 1. Make sure you have configured the key for the Repository you are about to add in the key store section.
 
-2. Go to the Repositories section of Semaphore, click the **New Repository** button in the upper right hand corner.
+2. Go to the Repositories section of Forge, click the **New Repository** button in the upper right hand corner.
 
 3. Configure the Repository:
     * Name Repository
@@ -38,21 +38,21 @@ For Remote Repositories that do not have authentication, you can create a Key wi
 4. Click Save once everything is configured.
 
 ## Editing an Existing Repository
-1. Go to the Repositories section of Semaphore.
+1. Go to the Repositories section of Forge.
 
 2. Click on the pencil icon next to the Repository you wish to change, then you will be presented with the Repository configuration.
 
 ## Deleting a Repository
 Make sure the Repository that is about to be delete is not in use by any Task Templates.
 A Repository cannot be deleted if it is used in any Task Templates:
-1. Go to the Repositories section of Semaphore.
+1. Go to the Repositories section of Forge.
 
 2. Click on the trash can icon on of the Repository you wish to delete.
 
 3. Click Yes on the confirmation pop-up if you are sure you want this Repository to be deleted.
 
 ## Requirements
-Upon project initialization Semaphore searches for and installs Ansible roles and collections from requirements.yml in the following locations and order.
+Upon project initialization Forge searches for and installs Ansible roles and collections from requirements.yml in the following locations and order.
 
 ### Roles
 
@@ -75,4 +75,4 @@ Upon project initialization Semaphore searches for and installs Ansible roles an
 * If any file processing results in an error, the installation process stops and returns the error
 * The same requirements.yml file in the root directories (**<playbook_dir>/requirements.yml** and **<repo_path>/requirements.yml**) is processed twice - once for roles and once for collections
 
-Semaphore will attempt to process all these locations regardless of whether previous locations were found or successfully processed, except in the case of errors.
+Forge will attempt to process all these locations regardless of whether previous locations were found or successfully processed, except in the case of errors.

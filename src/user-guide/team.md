@@ -1,6 +1,6 @@
 # Teams
 
-In Semaphore UI, every project is associated with a **Team**. Only team members and admins can access the project. Each member of the team is assigned one of four predefined roles, which govern their level of access and the actions they can perform.
+In Forge, every project is associated with a **Team**. Only team members and admins can access the project. Each member of the team is assigned one of four predefined roles, which govern their level of access and the actions they can perform.
 
 <div class="warning">
 To avoid losing access to a project, it’s recommended to have at least two team members with the <b>Owner</b> role.
@@ -100,7 +100,7 @@ Only **Owners** can delete a project.
 No. Managers can only add or remove users with **Task Runner** or **Guest** roles. To manage Owners or other Managers, you must be an Owner.
 
 ### 4. What happens if I remove all Owners by accident?
-Semaphore UI prevents the removal of an Owner if it would leave the project with no Owners at all. There must be at least one Owner at all times.
+Forge prevents the removal of an Owner if it would leave the project with no Owners at all. There must be at least one Owner at all times.
 
 ### 5. Can Guests run tasks?
 No. Guests only have read‐only access and cannot trigger or manage tasks.

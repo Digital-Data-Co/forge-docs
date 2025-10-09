@@ -5,18 +5,18 @@
 
 # Bitbucket Access Token
 
-You can use a Bitbucket Access Token in Semaphore to access repositories from Bitbucket.
+You can use a Bitbucket Access Token in Forge to access repositories from Bitbucket.
 
 First, you need to create an Access Token for your Bitbucket repository with read access permissions.
 
 ![](<../../.gitbook/assets/bitbucket_access_token_1.webp>)
 
 
-After creation, you will see the access token. Copy it to your clipboard as it will be required for creating an **Access Key** in Semaphore.
+After creation, you will see the access token. Copy it to your clipboard as it will be required for creating an **Access Key** in Forge.
 
 ![](<../../.gitbook/assets/bitbucket_access_token_2.webp>)
 
-1. Go to to the **Key Store** section in Semaphore and click the **New Key** button.
+1. Go to to the **Key Store** section in Forge and click the **New Key** button.
 
 2. Choose `Login with password` as the type of key.
 

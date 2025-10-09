@@ -7,7 +7,7 @@
 
 # Kerberos authentication
 
-Semaphore supports Kerberos authentication when running playbooks against **Windows hosts via WinRM**.
+Forge supports Kerberos authentication when running playbooks against **Windows hosts via WinRM**.
 
 ## Inventory configuration
 
@@ -26,7 +26,7 @@ ansible_winrm_scheme=http
 
 Also make sure:
 
-* A username and password are provided (Semaphore credentials)
+* A username and password are provided (Forge credentials)
 * The user format is `domain\\username` (e.g., `CORP\\admin`) if needed
 
 The key setting is:
@@ -51,9 +51,9 @@ This tells Ansible to **automatically acquire a Kerberos ticket** using the prov
 This verifies basic connectivity using WinRM + Kerberos.
 
 
-## Semaphore UI host requirements
+## Forge UI host requirements
 
-On the Semaphore host, install the following packages:
+On the Forge host, install the following packages:
 
 ```bash
 sudo apt install libkrb5-dev krb5-user
