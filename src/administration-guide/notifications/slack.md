@@ -5,9 +5,9 @@
 
 # Slack notifications
 
-Slack notifications allow you to receive real-time updates about your Semaphore workflows directly in your Slack channels. This integration helps teams stay informed about build statuses, deployment results, and other important events without having to constantly check the Semaphore dashboard.
+Slack notifications allow you to receive real-time updates about your Forge workflows directly in your Slack channels. This integration helps teams stay informed about build statuses, deployment results, and other important events without having to constantly check the Forge dashboard.
 
-To set up Slack notifications, you need to create a webhook URL that connects Semaphore to your desired Slack channel. This webhook acts as a secure communication bridge between the two platforms.
+To set up Slack notifications, you need to create a webhook URL that connects Forge to your desired Slack channel. This webhook acts as a secure communication bridge between the two platforms.
 
 ## Creating Slack webhook
 
@@ -15,7 +15,7 @@ To set up Slack notifications, you need to create a webhook URL that connects Se
 
 1. Go to [https://api.slack.com/apps](https://api.slack.com/apps).
 2. Click **Create New App** → choose **From Scratch**.
-3. Give your app a name (e.g., `Semaphore Bot`) and select your **Slack workspace**.
+3. Give your app a name (e.g., `Forge Bot`) and select your **Slack workspace**.
 
 ---
 
@@ -45,22 +45,22 @@ Use `curl` to test:
 
 ```bash
 curl -X POST -H 'Content-type: application/json' \
---data '{"text":"Hello from Semaphore UI 🚀"}' \
+--data '{"text":"Hello from Forge 🚀"}' \
 https://hooks.slack.com/services/xxxxxxxxxxx/xxxxxxxxxxx/xxxxxxxxxxxxxxxxxxxxxxxx
 ```
 
 If everything is set up, you’ll see the message in the selected Slack channel.
 
 
-## Semaphore configuration
+## Forge configuration
 
-Once you have your Slack webhook URL, you can configure Semaphore to send notifications in several ways:
+Once you have your Slack webhook URL, you can configure Forge to send notifications in several ways:
 
 You can enable Slack notifications using either configuration files or environment variables.
 
 ### Method 1: Configuration file
 
-Add the following settings to your Semaphore configuration file:
+Add the following settings to your Forge configuration file:
 
 - `slack_alert`: Set to `true` to enable Slack notifications
 - `slack_url`: Your webhook URL from the previous step
@@ -79,6 +79,6 @@ Add the following settings to your Semaphore configuration file:
 Alternatively, you can use environment variables to configure Slack notifications. This method is particularly useful for containerized deployments or when you want to keep sensitive information separate from configuration files.
 
 ```
-SEMAPHORE_SLACK_ALERT=True
-SEMAPHORE_SLACK_URL=https://hooks.slack.com/services/xxxxxxxxxxx/xxxxxxxxxxx/xxxxxxxxxxxxxxxxxxxxxxxx
+FORGE_SLACK_ALERT=True
+FORGE_SLACK_URL=https://hooks.slack.com/services/xxxxxxxxxxx/xxxxxxxxxxx/xxxxxxxxxxxxxxxxxxxxxxxx
 ```

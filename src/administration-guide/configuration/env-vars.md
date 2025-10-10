@@ -10,7 +10,7 @@ You can use interactive evnvironment variables generator (for Docker):
 
 ## Application environment for apps (Ansible, Terraform, etc.)
 
-Semaphore can pass environment variables to application processes (Ansible, Terraform/OpenTofu, Python, PowerShell, etc.). There are two related options:
+Forge can pass environment variables to application processes (Ansible, Terraform/OpenTofu, Python, PowerShell, etc.). There are two related options:
 
 - `env_vars` / `SEMAPHORE_ENV_VARS`: static key-value pairs that will be set for app processes.
 - `forwarded_env_vars` / `SEMAPHORE_FORWARDED_ENV_VARS`: a list of variable names the server will forward from its own process environment.

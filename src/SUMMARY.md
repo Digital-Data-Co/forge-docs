@@ -1,6 +1,6 @@
 # Table of contents
 
-* [Welcome to Semaphore UI](./README.md)
+* [Welcome to Forge UI](./README.md)
 
 * [Admin Guide](./administration-guide/README.md)
   <!-- * [Introduction](./administration-guide/introduction.md) -->

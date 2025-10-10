@@ -1,17 +1,17 @@
 # Installation
 
-You can install Semaphore in multiple ways, depending on your operating system, environment, and preferences:
+You can install Forge in multiple ways, depending on your operating system, environment, and preferences:
 
 * **Package manager**<br>
-  Install Semaphore using a native package for your distribution (e.g., apt for Debian/Ubuntu or dnf for RHEL-based systems). This is the easiest way to get started on Linux servers and integrates well with system services.<br>
+  Install Forge using a native package for your distribution (e.g., apt for Debian/Ubuntu or dnf for RHEL-based systems). This is the easiest way to get started on Linux servers and integrates well with system services.<br>
   [Learn more »](./installation/package-manager)
 
 * **Docker**<br>
-  Run Semaphore as a container using Docker or Docker Compose. Ideal for fast setup, sandboxed environments, and CI/CD pipelines. Recommended for users who prefer infrastructure as code.<br>
+  Run Forge as a container using Docker or Docker Compose. Ideal for fast setup, sandboxed environments, and CI/CD pipelines. Recommended for users who prefer infrastructure as code.<br>
   [Learn more »](./installation/docker)
 
 * **Cloud**<br>
-  Guidance for deploying Semaphore to cloud platforms using VMs, containers, or Kubernetes with managed services.<br>
+  Guidance for deploying Forge to cloud platforms using VMs, containers, or Kubernetes with managed services.<br>
   [Learn more »](./installation/cloud)
 
 * **Binary file**<br>
@@ -19,7 +19,7 @@ You can install Semaphore in multiple ways, depending on your operating system, 
   [Learn more »](./installation/binary-file)
 
 * **Kubernetes (Helm chart)**<br>
-  Deploy Semaphore into a Kubernetes cluster using Helm. Best suited for production-grade, scalable infrastructure. Supports easy configuration and upgrades via Helm values.<br>
+  Deploy Forge into a Kubernetes cluster using Helm. Best suited for production-grade, scalable infrastructure. Supports easy configuration and upgrades via Helm values.<br>
   [Learn more »](./installation/k8s)
 
 * **Snap (deprecated)**<br>

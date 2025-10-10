@@ -1,6 +1,6 @@
 # Cloud deployment
 
-You can run Semaphore in any cloud environment using the same supported installation methods:
+You can run Forge in any cloud environment using the same supported installation methods:
 
 - Virtual machines: install via package manager or binary, and run behind a reverse proxy such as NGINX. Use a managed database (e.g., Amazon RDS, Cloud SQL) for reliability.
 - Containers: deploy with Docker or Docker Compose on a VM or container service. See persistent volumes and environment configuration in the Docker guide.

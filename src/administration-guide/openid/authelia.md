@@ -20,7 +20,7 @@ identity_providers:
           - name
     clients:
       - client_id: semaphore
-        client_name: Semaphore
+        client_name: Forge
         client_secret: 'your_secret'
         claims_policy: semaphore_claims_policy
         public: false
@@ -34,7 +34,7 @@ identity_providers:
         userinfo_signed_response_alg: none
 ```
 
-Semaphore `config.json`:
+Forge `config.json`:
 ```json
 "oidc_providers":  {
     "authelia": {

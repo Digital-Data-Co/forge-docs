@@ -1,4 +1,4 @@
-# Manually installing Semaphore
+# Manually installing Forge
 
 ----
 
@@ -13,12 +13,12 @@
 
 ----
 
-This documentation goes into the details on how to set-up Semaphore when using these installation methods:
+This documentation goes into the details on how to set-up Forge when using these installation methods:
 
 * [Package manager](./installation.md#package-manager)
 * [Binary file](./installation.md#binary-file)
 
-The Semaphore software-package is just a part of the whole system needed to successfully run Ansible with it.
+The Forge software-package is just a part of the whole system needed to successfully run Ansible with it.
 
 The Python3- and Ansible-Execution-Environment are also very important!
 
@@ -28,7 +28,7 @@ NOTE: There are [existing Ansible-Galaxy Roles](https://galaxy.ansible.com/searc
 
 ## Service User
 
-Semaphore does not need to be run as user `root` - so you shouldn't.
+Forge does not need to be run as user `root` - so you shouldn't.
 
 **Benefits** of using a service user:
 * Has its own user-config
@@ -45,7 +45,7 @@ In this documentation we will assume:
 
 ### Troubleshooting
 
-If the Ansible execution of Semaphore is failing - you will need to troubleshoot it in the context of the service user.
+If the Ansible execution of Forge is failing - you will need to troubleshoot it in the context of the service user.
 
 You have multiple options to do so:
 
@@ -244,7 +244,7 @@ Add additional settings under their `[PART]`
 
 ```ini
 [Unit]
-Description=Semaphore UI
+Description=Forge UI
 Documentation=https://docs.semaphoreui.com/
 Wants=network-online.target
 After=network-online.target
@@ -354,7 +354,7 @@ SyslogIdentifier=semaphore
 
 ```ini
 [Unit]
-Description=Semaphore UI
+Description=Forge UI
 Documentation=https://docs.semaphoreui.com/
 Wants=network-online.target
 After=network-online.target
@@ -383,7 +383,7 @@ WantedBy=multi-user.target
 
 ```ini
 [Unit]
-Description=Semaphore UI
+Description=Forge UI
 Documentation=https://docs.semaphoreui.com/
 Wants=network-online.target
 After=network-online.target
@@ -424,9 +424,9 @@ Environment=LC_ALL="en_US.UTF-8"
 
 ## Troubleshooting
 
-If there is a problem while executing a task it might be an environmental issue with your setup - not an issue with Semaphore itself!
+If there is a problem while executing a task it might be an environmental issue with your setup - not an issue with Forge itself!
 
-Please go through these steps to verify if the issue occurs outside Semaphore:
+Please go through these steps to verify if the issue occurs outside Forge:
 
 - Change into the context of the user:
 
@@ -451,5 +451,5 @@ Please go through these steps to verify if the issue occurs outside Semaphore:
 
   - If it **fails** => there is an issue with your environment
   - If it **works**:
-    - Re-check your configuration inside Semaphore
-    - It might be an issue with Semaphore
+    - Re-check your configuration inside Forge
+    - It might be an issue with Forge

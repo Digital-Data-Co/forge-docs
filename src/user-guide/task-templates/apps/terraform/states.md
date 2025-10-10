@@ -6,14 +6,14 @@
 
 # HTTP Backend (Pro)
 
-The Semaphore UI HTTP backend for Terraform securely stores and manages Terraform state files directly within Semaphore. Available in the Pro plan, it offers several key advantages.
+The Forge HTTP backend for Terraform securely stores and manages Terraform state files directly within Forge. Available in the Pro plan, it offers several key advantages.
 
 ## Features
 
-- **Secure State Storage**: State files are <!-- encrypted and--> stored securely within Semaphore.
+- **Secure State Storage**: State files are <!-- encrypted and--> stored securely within Forge.
 - **State Locking**: Prevents concurrent modifications to the same state file.
 - **Version History**: Track changes to your infrastructure state over time.
-- **UI Integration**: Manage state files directly through the Semaphore interface.
+- **UI Integration**: Manage state files directly through the Forge interface.
 
 ## Configuration
 
@@ -27,17 +27,17 @@ When creating a workspace, you will be prompted to select an SSH key for cloning
 
 ### Using the HTTP backend in tasks
 
-To use the built-in HTTP backend for storing the state of your Terraform tasks, you do not need to manually configure the backend in your Terraform code. Semaphore can automatically create the configuration file during execution. To enable this, simply check the **Override backend settings** option in your task template settings, as shown in the screenshot below.
+To use the built-in HTTP backend for storing the state of your Terraform tasks, you do not need to manually configure the backend in your Terraform code. Forge can automatically create the configuration file during execution. To enable this, simply check the **Override backend settings** option in your task template settings, as shown in the screenshot below.
 
 ![](<../../../../.gitbook/assets/tf_backend_override.webp>)
 
-Optionally, you can specify the name of the configuration file that will be dynamically created during execution. This is useful if your code already contains a backend configuration file and you need to override it dynamically to work with Semaphore's built-in backend.
+Optionally, you can specify the name of the configuration file that will be dynamically created during execution. This is useful if your code already contains a backend configuration file and you need to override it dynamically to work with Forge's built-in backend.
 
-### Using the HTTP backend outside Semaphore
+### Using the HTTP backend outside Forge
 
-You can use the built-in HTTP backend not only when running tasks inside Semaphore, but also when executing Terraform code outside of Semaphore, such as from your local terminal.
+You can use the built-in HTTP backend not only when running tasks inside Forge, but also when executing Terraform code outside of Forge, such as from your local terminal.
 
-To enable this, Semaphore allows you to create aliases (unique HTTP endpoint) for your state storage. These aliases make it easy to reference your state files from external environments.
+To enable this, Forge allows you to create aliases (unique HTTP endpoint) for your state storage. These aliases make it easy to reference your state files from external environments.
 
 To set this up, go to the **Workspaces** tab, select the desired workspace, and add an alias. You will also need to choose a key with a username and password, which will be used to authenticate access to the backend.
 
@@ -57,7 +57,7 @@ terraform {
 }
 ```
 
-Now Terraform will use Semaphore's built-in HTTP backend even when running from your terminal:
+Now Terraform will use Forge's built-in HTTP backend even when running from your terminal:
 
 ```
 terraform apply

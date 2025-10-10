@@ -15,4 +15,4 @@ Your data will be decryped using `<encryption-key-which-used-before>` and will b
 
 #### Multiple vault passwords (Ansible)
 
-You can define multiple Ansible Vault passwords in the Key Store and attach them to an Ansible template. During execution, Semaphore will provide all configured passwords to Ansible so it can decrypt any referenced vaults.
+You can define multiple Ansible Vault passwords in the Key Store and attach them to an Ansible template. During execution, Forge will provide all configured passwords to Ansible so it can decrypt any referenced vaults.

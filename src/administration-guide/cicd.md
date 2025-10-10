@@ -1,8 +1,8 @@
 # Pipelines
 
-Semaphore supports simple pipelines with using `build` and `deploy` tasks. 
+Forge supports simple pipelines with using `build` and `deploy` tasks. 
 
-Semaphore passes `semaphore_vars` variable to each Ansible playbook which it runs.
+Forge passes `semaphore_vars` variable to each Ansible playbook which it runs.
 
 You can use it in your Ansible tasks to get what type of task was run, which version should be build or deployed, who ran the task, etc.
 

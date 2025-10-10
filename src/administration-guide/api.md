@@ -2,7 +2,7 @@
 
 ## API reference
 
-Semaphore UI provides two formats of API documentation, so you can choose the one that fits your workflow best:
+Forge UI provides two formats of API documentation, so you can choose the one that fits your workflow best:
 
 * [Swagger/OpenAPI](https://semaphoreui.com/api-docs) &mdash; ideal if you prefer an interactive, browser-based experience.
 * [Official Postman Collection](https://www.postman.com/semaphoreui) &mdash; explore and test all endpoints in Postman.
@@ -14,7 +14,7 @@ All options include complete documentation of available endpoints, parameters, a
 
 ## Getting Started with the API
 
-To start using the Semaphore API, you need to generate an API token.
+To start using the Forge API, you need to generate an API token.
 This token must be included in the request header as:
 
 ```http
@@ -29,7 +29,7 @@ There are two ways to create an API token:
 
 #### Through the web interface (since 2.14)
 
-You can create and manage your API tokens via the Semaphore web UI:
+You can create and manage your API tokens via the Forge web UI:
 
 <img style="aspect-ratio: 1920/1440" src="https://www.semaphoreui.com/uploads/v2.14/tokens.webp">
 
@@ -37,7 +37,7 @@ You can create and manage your API tokens via the Semaphore web UI:
 
 You can also authenticate and generate a session token using a direct HTTP request.
 
-Login to Semaphore (password should be escaped, `slashy\\pass` instead of `slashy\pass` e.g.):
+Login to Forge (password should be escaped, `slashy\\pass` instead of `slashy\pass` e.g.):
 
 ```bash
 curl -v -c /tmp/semaphore-cookie -XPOST \

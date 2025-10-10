@@ -45,7 +45,7 @@ Example of claim expression:
 email | {{ .username }}@your-domain.com
 ```
 
-Semaphore is attempting to claim the email field first. If it is empty, the expression following it is executed.
+Forge is attempting to claim the email field first. If it is empty, the expression following it is executed.
 
 <div class="warning">
   The expression <code>"username_claim": "|"</code> generates a random <code>username</code> for each user who logs in through the provider.
@@ -88,7 +88,7 @@ docker run -d --name openldap \
   bitnami/openldap:latest
 ```
 
-Your LDAP configuration for Semaphore UI should be as follows:
+Your LDAP configuration for Forge UI should be as follows:
 
 ```json
 {
@@ -107,7 +107,7 @@ Your LDAP configuration for Semaphore UI should be as follows:
 }
 ```
 
-To run Semaphore in Docker, use the following LDAP configuration:
+To run Forge in Docker, use the following LDAP configuration:
 
 
 ```

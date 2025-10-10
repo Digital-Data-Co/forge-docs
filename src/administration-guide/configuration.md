@@ -1,9 +1,9 @@
 # Configuration
 
-Semaphore can be configured using several methods:
+Forge can be configured using several methods:
 
-* [Interactive setup](./configuration/snap.md) &mdash; guided configuration when running Semaphore for the first time. It creates `config.json`.
-* [Configuration file](./configuration/config-file.md) &mdash; the primary and most flexible way to configure Semaphore.
+* [Interactive setup](./configuration/snap.md) &mdash; guided configuration when running Forge for the first time. It creates `config.json`.
+* [Configuration file](./configuration/config-file.md) &mdash; the primary and most flexible way to configure Forge.
 * [Environment variables](./configuration/env-vars.md) &mdash; useful for containerized or cloud-native deployments.
 * [Snap configuration (deprecated)](./configuration/snap.md) &mdash; legacy method used when installing via Snap packages.
 
@@ -49,8 +49,8 @@ Full list of available configuration options:
 | <br>`access_key_encryption` <hr> `SEMAPHORE_ACCESS_KEY_ENCRYPTION`<br><br> | Secret key used for encrypting access keys in database. Read more in [Database encryption reference](./security.md#database-encryption). |
 | <br>`cookie_hash`           <hr> `SEMAPHORE_COOKIE_HASH`<br><br> | Secret key used to sign cookies. |
 | <br>`cookie_encryption`     <hr> `SEMAPHORE_COOKIE_ENCRYPTION`<br><br> | Secret key used to encrypt cookies. |
-| <br>`web_host`       <hr> `SEMAPHORE_WEB_ROOT`<br><br> | Can be useful if you want to use Semaphore by the subpath, for example: [http://yourdomain.com/semaphore](http://yourdomain.com/semaphore). Do not add a trailing `/`. |
-| <br>`tls.enabled`    <hr> `SEMAPHORE_TLS_ENABLED`<br><br> | Enable or disable TLS (HTTPS) for secure communication with the Semaphore server. |
+| <br>`web_host`       <hr> `SEMAPHORE_WEB_ROOT`<br><br> | Can be useful if you want to use Forge by the subpath, for example: [http://yourdomain.com/semaphore](http://yourdomain.com/semaphore). Do not add a trailing `/`. |
+| <br>`tls.enabled`    <hr> `SEMAPHORE_TLS_ENABLED`<br><br> | Enable or disable TLS (HTTPS) for secure communication with the Forge server. |
 | <br>`tls.cert_file`  <hr> `SEMAPHORE_TLS_CERT_FILE`<br><br> | Path to TLS certificate file. |
 | <br>`tls.key_file`   <hr> `SEMAPHORE_TLS_KEY_FILE`<br><br> | Path to TLS key file. |
 | <br>`tls.http_redirect_port` <hr> `SEMAPHORE_TLS_HTTP_REDIRECT_PORT`<br><br> | Port to redirect HTTP traffic to HTTPS. |
@@ -76,11 +76,11 @@ Full list of available configuration options:
 | <br>`telegram_chat`  <hr> `SEMAPHORE_TELEGRAM_CHAT`<br><br> | Set to the Chat ID for the chat to send alerts to.  Read more in [Telegram Notifications Setup](./notifications.md#chat-id) |
 | <br>`telegram_token` <hr> `SEMAPHORE_TELEGRAM_TOKEN`<br><br> | Set to the Authorization Token for the bot that will receive the alert payload.  Read more in [Telegram Notifications Setup](./notifications.md#bot-setup) |
 | <br>`slack_alert`    <hr> `SEMAPHORE_SLACK_ALERT`<br><br> | Set to True to enable pushing alerts to slack. It should be used in combination with `slack_url`                          |
-| <br>`slack_url`      <hr> `SEMAPHORE_SLACK_URL`<br><br> | The slack webhook url. Semaphore will used it to POST Slack formatted json alerts to the provided url.    |
+| <br>`slack_url`      <hr> `SEMAPHORE_SLACK_URL`<br><br> | The slack webhook url. Forge will used it to POST Slack formatted json alerts to the provided url.    |
 | <br>`microsoft_teams_alert` <hr> `SEMAPHORE_MICROSOFT_TEAMS_ALERT` <br><br> | Flag which enables Microsoft Teams alerts. |
 | <br>`microsoft_teams_url`   <hr> `SEMAPHORE_MICROSOFT_TEAMS_URL` <br><br> | Microsoft Teams webhook URL. |
 | <br>`rocketchat_alert`      <hr> `SEMAPHORE_ROCKETCHAT_ALERT` <br><br> | Set to True to enable pushing alerts to Rocket.Chat. It should be used in combination with `rocketchat_url`. Available since v2.9.56.  |
-| <br>`rocketchat_url`        <hr> `SEMAPHORE_ROCKETCHAT_URL` <br><br> | The rocketchat webhook url. Semaphore will used it to POST Rocket.Chat formatted json alerts to the provided url. Available since v2.9.56. |
+| <br>`rocketchat_url`        <hr> `SEMAPHORE_ROCKETCHAT_URL` <br><br> | The rocketchat webhook url. Forge will used it to POST Rocket.Chat formatted json alerts to the provided url. Available since v2.9.56. |
 | <br>`dingtalk_alert`        <hr> `SEMAPHORE_DINGTALK_ALERT` <br><br> | Enable Dingtalk alerts. |
 | <br>`dingtalk_url`          <hr> `SEMAPHORE_DINGTALK_URL` <br><br> | Dingtalk messenger webhook URL. |
 | <br>`gotify_alert`          <hr> `SEMAPHORE_GOTIFY_ALERT` <br><br> | Enable Gotify alerts. |
@@ -109,12 +109,12 @@ Full list of available configuration options:
 
 ## Frequently asked questions
 
-### 1. How to configure a public URL for Semaphore UI
+### 1. How to configure a public URL for Forge UI
 
-If you use nginx or other web server before Semaphore, you should provide configuration option `web_host`.
+If you use nginx or other web server before Forge, you should provide configuration option `web_host`.
 
-For example you configured NGINX on the server which proxies queries to Semaphore.
+For example you configured NGINX on the server which proxies queries to Forge.
 
-Server address `https://example.com` and you proxies all queries `https://example.com/semaphore` to Semaphore.
+Server address `https://example.com` and you proxies all queries `https://example.com/semaphore` to Forge.
 
 Your `web_host` will be `https://example.com/semaphore`.

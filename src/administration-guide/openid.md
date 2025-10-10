@@ -1,6 +1,6 @@
 # OpenID
 
-Semaphore supports authentication via OpenID Connect (OIDC).
+Forge supports authentication via OpenID Connect (OIDC).
 
 Links:
 
@@ -80,7 +80,7 @@ Example of claim expression:
 email | {{ .username }}@your-domain.com
 ```
 
-Semaphore is attempting to claim the email field first. If it is empty, the expression following it is executed.
+Forge is attempting to claim the email field first. If it is empty, the expression following it is executed.
 
 <div class="warning">
   The expression <code>"username_claim": "|"</code> generates a random <code>username</code> for each user who logs in through the provider.
@@ -90,4 +90,4 @@ Semaphore is attempting to claim the email field first. If it is empty, the expr
 
 For each of the configured providers, an additional login button is added to the login page:
 
-![Screenshot of the Semaphore login page, with two login buttons. One says "Sign In", the other says "Sign in with MySSO"](https://user-images.githubusercontent.com/5564491/232345599-13f744a0-0530-4422-8b55-6a563a4ef5d9.png)
+![Screenshot of the Forge login page, with two login buttons. One says "Sign In", the other says "Sign in with MySSO"](https://user-images.githubusercontent.com/5564491/232345599-13f744a0-0530-4422-8b55-6a563a4ef5d9.png)

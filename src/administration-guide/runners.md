@@ -1,15 +1,15 @@
 # Runners
 
-Runners enable running tasks on a separate server from Semaphore UI.
+Runners enable running tasks on a separate server from Forge UI.
 
-Semaphore runners operate on the same principle as GitLab or GitHub Actions runners:
+Forge runners operate on the same principle as GitLab or GitHub Actions runners:
 
-- You launch a runner on a separate server, specifying the Semaphore server's address and an authentication token.
-- The runner connects to Semaphore and signals its readiness to accept tasks.
-- When a new task appears, Semaphore provides all the necessary information to the runner, which, in turn, clones the repository and runs Ansible, Terraform, PowerShell, etc.
-- The runner sends the task execution results back to Semaphore.
+- You launch a runner on a separate server, specifying the Forge server's address and an authentication token.
+- The runner connects to Forge and signals its readiness to accept tasks.
+- When a new task appears, Forge provides all the necessary information to the runner, which, in turn, clones the repository and runs Ansible, Terraform, PowerShell, etc.
+- The runner sends the task execution results back to Forge.
 
-For end users, working with Semaphore with or without runners appears the same.
+For end users, working with Forge with or without runners appears the same.
 
 Using runners offers the following advantages:
 - Executing tasks more securely. For instance, a runner can be located within a closed subnet or isolated docker container.
@@ -19,7 +19,7 @@ Using runners offers the following advantages:
 
 ### Set up a server
 
-To set up the server for working with running you should add following option to your Semaphore server configuration:
+To set up the server for working with running you should add following option to your Forge server configuration:
 
 ```json
 {
@@ -31,8 +31,8 @@ To set up the server for working with running you should add following option to
 or with using environment variables:
 
 ```bash
-SEMAPHORE_USE_REMOTE_RUNNER=True
-SEMAPHORE_RUNNER_REGISTRATION_TOKEN=long_string_of_random_characters
+FORGE_USE_REMOTE_RUNNER=True
+FORGE_RUNNER_REGISTRATION_TOKEN=long_string_of_random_characters
 ```
 
 ### Setup a runner
@@ -40,7 +40,7 @@ SEMAPHORE_RUNNER_REGISTRATION_TOKEN=long_string_of_random_characters
 To set up the runner, use the following command:
 
 ```bash
-semaphore runner setup --config /path/to/your/config/file.json
+forge runner setup --config /path/to/your/config/file.json
 ```
 
 This command will create a configuration file at `/path/to/your/config/file.json`.
@@ -49,9 +49,9 @@ But before using this command, you need to understand how runners are registered
 
 ### Registering the runner on the server
 
-There are two ways to register a runner on the Semaphore server:
+There are two ways to register a runner on the Forge server:
 1) Add it via the web interface or API.
-2) Use the command line with the `semaphore runner register` command.
+2) Use the command line with the `forge runner register` command.
 
 #### Adding the runner via the web UI
 
@@ -59,24 +59,24 @@ There are two ways to register a runner on the Semaphore server:
 
 #### Registering via CLI
 
-To register a runner this way, you need to add the `runner_registration_token` option to your Semaphore server's configuration file. This option should be set to an arbitrary string. Choose a sufficiently complex string to avoid security issues.
+To register a runner this way, you need to add the `runner_registration_token` option to your Forge server's configuration file. This option should be set to an arbitrary string. Choose a sufficiently complex string to avoid security issues.
 
-When the `semaphore runner setup` command asks if you have a Runner token, answer No. Then use the following command to register the runner:
+When the `forge runner setup` command asks if you have a Runner token, answer No. Then use the following command to register the runner:
 
-`semaphore runner register --config /path/to/your/config/file.json`
+`forge runner register --config /path/to/your/config/file.json`
 
 or
 
-`echo REGISTRATION_TOKEN | semaphore runner register --stdin-registration-token --config /path/to/your/config/file.json`
+`echo REGISTRATION_TOKEN | forge runner register --stdin-registration-token --config /path/to/your/config/file.json`
 
 ### Configuration file
 
-As a result of running the `semaphore runner setup` command, a configuration file like the following will be created:
+As a result of running the `forge runner setup` command, a configuration file like the following will be created:
 
 ```json
 {
-  "tmp_path": "/tmp/semaphore",
-  "web_host": "https://semaphore_server_host",
+  "tmp_path": "/tmp/forge",
+  "web_host": "https://forge_server_host",
 
   // Here you can provide other settings, for example: git_client, ssh_config_path, etc.
   // ...
@@ -95,16 +95,16 @@ As a result of running the `semaphore runner setup` command, a configuration fil
 }
 ```
 
-You can manually edit this file without needing to call `semaphore runner setup` again.
+You can manually edit this file without needing to call `forge runner setup` again.
 
-To re-register the runner, you can use the `semaphore runner register` command. This will overwrite the token in the file specified in the configuration.
+To re-register the runner, you can use the `forge runner register` command. This will overwrite the token in the file specified in the configuration.
 
 ## Running the runner
 
 Now you can start the runner with the command:
 
 ```
-semaphore runner start --config /path/to/your/config/file.json
+forge runner start --config /path/to/your/config/file.json
 ```
 
 Your runner is ready to execute tasks ;)
@@ -124,7 +124,7 @@ You can remove runner using the web interfance.
 Or unregister runner via CLI:
 
 ```
-semaphore runner unregister --config /path/to/your/config/file.json
+forge runner unregister --config /path/to/your/config/file.json
 ```
 
 ## Security

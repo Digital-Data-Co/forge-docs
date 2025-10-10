@@ -1,16 +1,16 @@
 # Logs
 
-Semaphore writes server logs to **stdout** and stores **Task** and **Activity** logs in a **database**, centralizing key log information and eliminating the need to back up log files separately. The only data stored on the file system is caching data.
+Forge writes server logs to **stdout** and stores **Task** and **Activity** logs in a **database**, centralizing key log information and eliminating the need to back up log files separately. The only data stored on the file system is caching data.
 
 ---
 
 ## Server log
 
-Semaphore does not log to files. Instead, all application logs are written to **stdout**.  
-If Semaphore is running as a systemd service, you can view the logs with the following command:
+Forge does not log to files. Instead, all application logs are written to **stdout**.  
+If Forge is running as a systemd service, you can view the logs with the following command:
 
 ```bash
-journalctl -u semaphore.service -f
+journalctl -u forge.service -f
 ```
 
 This provides a live (streaming) view of the logs.
@@ -19,7 +19,7 @@ This provides a live (streaming) view of the logs.
 
 ## Activity log
 
-The Activity Log captures all user actions performed in Semaphore, including:
+The Activity Log captures all user actions performed in Forge, including:
 
 - Adding or removing resources (e.g., Templates, Inventories, Repositories).
 - Adding or removing team members.
@@ -27,7 +27,7 @@ The Activity Log captures all user actions performed in Semaphore, including:
 
 ### Pro version 2.10 and later
 
-**Semaphore Pro** 2.10+ supports writing the Activity Log and Task log to a file. To enable this, add the following configuration to your `config.json`:
+**Forge Pro** 2.10+ supports writing the Activity Log and Task log to a file. To enable this, add the following configuration to your `config.json`:
 
 ```json
 {
@@ -58,38 +58,38 @@ The Activity Log captures all user actions performed in Semaphore, including:
 Or you can do this using following environment variables:
 
 ```bash
-export SEMAPHORE_EVENT_LOG_ENABLED=True
-export SEMAPHORE_EVENT_LOG_PATH=./events.log
+export FORGE_EVENT_LOG_ENABLED=True
+export FORGE_EVENT_LOG_PATH=./events.log
 
-export SEMAPHORE_TASK_LOG_ENABLED=True
-export SEMAPHORE_TASK_LOG_PATH=./tasks.log
+export FORGE_TASK_LOG_ENABLED=True
+export FORGE_TASK_LOG_PATH=./tasks.log
 ```
 
 #### Activity (events) logging options
 
-The Activity (events) logging options allow you to configure how Semaphore records user actions and system events to a file. These settings control the behavior of event logging, including whether it's enabled, the format of log entries, and specific logger configurations. When enabled, all user actions (like creating templates, managing teams, or running tasks) will be written to the specified log file according to these settings.
+The Activity (events) logging options allow you to configure how Forge records user actions and system events to a file. These settings control the behavior of event logging, including whether it's enabled, the format of log entries, and specific logger configurations. When enabled, all user actions (like creating templates, managing teams, or running tasks) will be written to the specified log file according to these settings.
 
 | Parameter             | Environment Variables | Description           |
 | --------------------- | --------------------- | --------------------- |
-| `enabled`             | `SEMAPHORE_EVENT_LOG_ENABLED` | Enable event logging to file. |
-| `format`              | `SEMAPHORE_EVENT_LOG_FORMAT`  | Log record format. Can be `raw` or `json`. |
-| `logger`              | `SEMAPHORE_EVENT_LOG_LOGGER`  | [Logger options](#logger-options). |
+| `enabled`             | `FORGE_EVENT_LOG_ENABLED` | Enable event logging to file. |
+| `format`              | `FORGE_EVENT_LOG_FORMAT`  | Log record format. Can be `raw` or `json`. |
+| `logger`              | `FORGE_EVENT_LOG_LOGGER`  | [Logger options](#logger-options). |
 
 #### Tasks logging options
 
-The Tasks logging options allow you to configure how Semaphore records task execution details to a file. These settings control the logging of task-related events, including task starts, completions, and their execution status. When enabled, all task operations and their outcomes will be written to the specified log file according to these settings, providing a detailed audit trail of task execution history.
+The Tasks logging options allow you to configure how Forge records task execution details to a file. These settings control the logging of task-related events, including task starts, completions, and their execution status. When enabled, all task operations and their outcomes will be written to the specified log file according to these settings, providing a detailed audit trail of task execution history.
 
 | Parameter             | Environment Variables | Description           |
 | --------------------- | --------------------- | --------------------- |
-| `enabled`             | `SEMAPHORE_TASK_LOG_ENABLED` | Enable task logging to file. |
-| `format`              | `SEMAPHORE_TASK_LOG_FORMAT`  | Log record format. Can be `raw` or `json`. |
-| `logger`              | `SEMAPHORE_TASK_LOG_LOGGER`  | [Logger options](#logger-options). |
+| `enabled`             | `FORGE_TASK_LOG_ENABLED` | Enable task logging to file. |
+| `format`              | `FORGE_TASK_LOG_FORMAT`  | Log record format. Can be `raw` or `json`. |
+| `logger`              | `FORGE_TASK_LOG_LOGGER`  | [Logger options](#logger-options). |
 
 #### Task results logging options
 
 | Parameter             | Environment Variables | Description           |
 | --------------------- | --------------------- | --------------------- |
-| `result_logger`              | `SEMAPHORE_TASK_RESULT_LOGGER`  | Logger options. |
+| `result_logger`              | `FORGE_TASK_RESULT_LOGGER`  | Logger options. |
 
 
 #### Logger options
@@ -115,17 +115,17 @@ Each line in the file follows this format:
 
 ## Task history
 
-Semaphore stores information about task execution in the database. Task history provides a detailed view of all executed tasks, including their status and logs. You can monitor tasks in real time or review historical logs through the web interface.
+Forge stores information about task execution in the database. Task history provides a detailed view of all executed tasks, including their status and logs. You can monitor tasks in real time or review historical logs through the web interface.
 
 ### Configuring task retention
 
-By default, Semaphore stores all tasks in the database. If you run a large number of tasks, thet can occupy a significant amount of disk space.
+By default, Forge stores all tasks in the database. If you run a large number of tasks, thet can occupy a significant amount of disk space.
 
 You can configure how many tasks are retained per template using one of the following approaches:
 
 1. **Environment Variable**  
    ```bash
-   SEMAPHORE_MAX_TASKS_PER_TEMPLATE=30
+   FORGE_MAX_TASKS_PER_TEMPLATE=30
    ```
 2. **`config.json` Option**  
    ```json
@@ -144,4 +144,4 @@ When the number of tasks exceeds this limit, the oldest Task Logs are automatica
 - **Activity and tasks log:** Tracks all user actions. Optionally, **Pro 2.10+** can write these to a file.  
 - **Task history:** Stores real-time and historical task execution logs. Retention is configurable per template.
 
-Following these guidelines ensures you have proper visibility into Semaphore UI operations while controlling storage usage and log retention.
+Following these guidelines ensures you have proper visibility into Forge UI operations while controlling storage usage and log retention.

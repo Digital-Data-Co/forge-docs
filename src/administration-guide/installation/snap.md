@@ -5,13 +5,13 @@
 
 # Snap (deprecated)
 
-To install Semaphore via snap, run following command in terminal:
+To install Forge via snap, run following command in terminal:
 
 ```bash
 sudo snap install semaphore
 ```
 
-Semaphore will be available by URL [https://localhost:3000](https://localhost:3000).&#x20;
+Forge will be available by URL [https://localhost:3000](https://localhost:3000).&#x20;
 
 But to log in, you should create an admin user. Use the following commands:
 
@@ -27,7 +27,7 @@ sudo semaphore user add --admin \
 sudo snap start semaphore
 ```
 
-You can check the status of the Semaphore service using the following command:
+You can check the status of the Forge service using the following command:
 
 ```bash
 sudo snap services semaphore
@@ -40,7 +40,7 @@ Service               Startup  Current  Notes
 semaphore.semaphored  enabled  active   -
 ```
 
-After installation, you can set up Semaphore via [Snap Configuration](https://snapcraft.io/docs/configuration-in-snaps). Use the following command to see your Semaphore configuration:
+After installation, you can set up Forge via [Snap Configuration](https://snapcraft.io/docs/configuration-in-snaps). Use the following command to see your Forge configuration:
 
 ```bash
 sudo snap get semaphore

@@ -7,7 +7,7 @@
 
 ### Pre-requisites
 
-In order to configure Semaphore UI to send alerts via Telegram, a few steps are required beforehand on the Telegram side.  You'll need to create your own bot that will receive the webhook and you'll need to know the ID of the chat you want to send the message to.
+In order to configure Forge UI to send alerts via Telegram, a few steps are required beforehand on the Telegram side.  You'll need to create your own bot that will receive the webhook and you'll need to know the ID of the chat you want to send the message to.
 
 #### Bot setup
 
@@ -34,7 +34,7 @@ curl -X POST https://api.telegram.org/botYOUR_BOT_TOKEN/sendMessage \
 
 ### Configuration
 
-Using the Chat ID and Token from the previous steps, you can now configure Semaphore UI to send Telegram Alerts as follows:
+Using the Chat ID and Token from the previous steps, you can now configure Forge UI to send Telegram Alerts as follows:
 
 ```
 telegram_alert: True

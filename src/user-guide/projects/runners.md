@@ -52,7 +52,7 @@ To use runners, you need:
 
 <!-- ### Configuration
 
-1. **Semaphore UI Configuration**
+1. **Forge UI Configuration**
   
 
 2. **Runner Setup** -->

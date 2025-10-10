@@ -5,7 +5,7 @@
 
 # Database Migrations
 
-Database migrations allow you to update or roll back your Semaphore database schema to match the requirements of different Semaphore versions. This is essential for upgrades, downgrades, and maintaining compatibility.
+Database migrations allow you to update or roll back your Forge database schema to match the requirements of different Forge versions. This is essential for upgrades, downgrades, and maintaining compatibility.
 
 ## Getting Help
 
@@ -58,4 +58,4 @@ semaphore migrate --undo-to 2.13
 ## Troubleshooting
 
 - Always back up your database before applying or rolling back migrations.
-- If you encounter errors, check the logs for details and ensure your CLI version matches your Semaphore server version.
+- If you encounter errors, check the logs for details and ensure your CLI version matches your Forge server version.

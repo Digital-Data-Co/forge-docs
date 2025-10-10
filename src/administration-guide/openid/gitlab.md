@@ -24,4 +24,4 @@
 }
 ```
 
-Tutorial in Semaphore UI blog: [GitLab authentication in Semaphore UI](https://semaphoreui.com/blog/openid-authentication/).
+Tutorial in Forge blog: [GitLab authentication in Forge](https://forge.com/blog/openid-authentication/).

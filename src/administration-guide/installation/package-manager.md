@@ -57,18 +57,18 @@ sudo yum install semaphore_2.15.0_linux_arm64.rpm
 
 {{#endtabs }}
 
-Setup Semaphore by using the following command:
+Setup Forge by using the following command:
 
 ```
 semaphore setup
 ```
 
-Now you can run Semaphore:
+Now you can run Forge:
 
 ```
 semaphore server --config=./config.json
 ```
 
-Semaphore will be available via this URL [https://localhost:3000](https://localhost:3000).
+Forge will be available via this URL [https://localhost:3000](https://localhost:3000).
 
 ----
