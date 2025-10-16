@@ -35,11 +35,11 @@ svg {
 
 .light .menu-title, 
 .rust .menu-title {
-    background-image: url(/.gitbook/assets/semaphore-docs-light.png);
+    background-image: url(./logo.svg);
 }
 
 .coal .menu-title, 
 .navy .menu-title, 
 .ayu .menu-title {
-    background-image: url(/.gitbook/assets/semaphore-docs-dark.png);
+    background-image: url(./logo.svg);
 }

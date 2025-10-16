@@ -19,6 +19,7 @@ additional-js = ["theme/tabs.js"] # "mermaid.min.js", "mermaid-init.js"
 google-analytics = "G-SXDFVHLVBM"
 edit-url-template = "https://github.com/Digital-Data-Co/forge-docs/edit/main/{path}"
 site-url = "https://digital-data-co.github.io/forge-docs"
+default-theme = "light"
 
 [output.html.search]
 enable = true
