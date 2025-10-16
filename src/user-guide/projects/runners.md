@@ -5,7 +5,7 @@
 
 # Project runners (Pro)
 
-Project Runners are a powerful feature in Forge Pro that enables distributed task execution across multiple servers. This feature allows you to run tasks on separate servers from your Forge UI instance, providing enhanced security, scalability, and resource management.
+Project Runners are a powerful feature in Forge Pro that enables distributed task execution across multiple servers. This feature allows you to run tasks on separate servers from your Forge instance, providing enhanced security, scalability, and resource management.
 
 
 ![](<../../.gitbook/assets/project_runners.webp>)
@@ -15,7 +15,7 @@ Project Runners are a powerful feature in Forge Pro that enables distributed tas
 
 Project runners operate on a similar principle to GitLab or GitHub Actions runners:
 
-- A runner is deployed on a separate server from your Forge UI
+- A runner is deployed on a separate server from your Forge
 - The runner connects to your Forge instance using a secure token
 - When tasks are created, Forge delegates them to available runners
 - Runners execute the tasks and report results back to Forge
@@ -47,12 +47,12 @@ To use runners, you need:
 
 1. A Forge Pro license
 2. A separate server for running the runner
-3. Network connectivity between the runner and Forge UI
-4. Proper configuration on both the Forge UI and runner servers
+3. Network connectivity between the runner and Forge
+4. Proper configuration on both the Forge and runner servers
 
 <!-- ### Configuration
 
-1. **Forge UI Configuration**
+1. **Forge Configuration**
   
 
 2. **Runner Setup** -->
@@ -60,7 +60,7 @@ To use runners, you need:
 
 ### Managing Runners
 
-You can manage runners through the Forge UI:
+You can manage runners through the Forge:
 
 1. Navigate to the Runners section in your project
 2. View all registered runners and their status
@@ -69,8 +69,8 @@ You can manage runners through the Forge UI:
 
 ### Security Considerations
 
-- Always use HTTPS for communication between runners and Forge UI
-- Implement proper network security between runners and Forge UI
+- Always use HTTPS for communication between runners and Forge
+- Implement proper network security between runners and Forge
 - Consider using isolated environments for sensitive operations
 
 ## Best Practices

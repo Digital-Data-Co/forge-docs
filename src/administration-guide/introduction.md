@@ -1,10 +1,10 @@
 # Introduction
 
-Welcome to the Forge UI Administration Guide. This guide provides comprehensive information for installing, configuring, and maintaining your Forge instance.
+Welcome to the Forge Administration Guide. This guide provides comprehensive information for installing, configuring, and maintaining your Forge instance.
 
-## What is Forge UI?
+## What is Forge?
 
-Forge UI is a modern, open-source web interface for running automation tasks. It is designed to be a lightweight, fast, and easy-to-use alternative to more complex automation platforms.
+Forge is a modern, open-source web interface for running automation tasks. It is designed to be a lightweight, fast, and easy-to-use alternative to more complex automation platforms.
 
 It allows you to securely manage and execute tasks for:
 *   **Ansible** playbooks

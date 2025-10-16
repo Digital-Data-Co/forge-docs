@@ -1,8 +1,8 @@
-# Welcome to Forge UI
+# Welcome to Forge
 
-## What is Forge UI?
+## What is Forge?
 
-Forge UI is a modern UI and powerful API for Ansible, Terraform, OpenTofu, PowerShell and other DevOps tools.
+Forge is a modern UI and powerful API for Ansible, Terraform, OpenTofu, PowerShell and other DevOps tools.
 
 <img style="box-shadow: none;" src=".gitbook/assets/134777345-8789d9e4-ff0d-439c-b80e-ddc56b74fcee.webp">
 
@@ -27,14 +27,14 @@ With Forge you can:
 
 ## Links
 
-* Source code: [https://github.com/semaphoreui/semaphore](https://github.com/semaphoreui/semaphore)
-* Issue tracking: [https://github.com/semaphoreui/semaphore/issues](https://github.com/semaphoreui/semaphore/issues)
-* Docker: [https://hub.docker.com/r/semaphoreui/semaphore](https://hub.docker.com/r/semaphoreui/semaphore)
-* Snap: [https://snapcraft.io/semaphore](https://snapcraft.io/semaphore)
-* Contact: [denis@semaphoreui.com](mailto:denis@semaphoreui.com)
+* Source code: [https://github.com/forge/semaphore](https://github.com/forge/semaphore)
+* Issue tracking: [https://github.com/forge/semaphore/issues](https://github.com/forge/semaphore/issues)
+* Docker: [https://hub.docker.com/r/forge/semaphore](https://hub.docker.com/r/forge/semaphore)
+* Snap: [https://snapcraft.io/forge](https://snapcraft.io/forge)
+* Contact: [contact@forge.dev](mailto:contact@forge.dev)
 * Docker container configurator:
 
-   [![](https://img.shields.io/badge/docker_configurator-0050ab?style=for-the-badge&logo=docker)](https://semaphoreui.com/install/docker/)  
+   [![](https://img.shields.io/badge/docker_configurator-0050ab?style=for-the-badge&logo=docker)](https://forge.dev/install/docker/)  
 
 * Our responsive community:
 

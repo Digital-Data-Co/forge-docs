@@ -244,7 +244,7 @@ Add additional settings under their `[PART]`
 
 ```ini
 [Unit]
-Description=Forge UI
+Description=Forge
 Documentation=https://docs.semaphoreui.com/
 Wants=network-online.target
 After=network-online.target
@@ -354,7 +354,7 @@ SyslogIdentifier=semaphore
 
 ```ini
 [Unit]
-Description=Forge UI
+Description=Forge
 Documentation=https://docs.semaphoreui.com/
 Wants=network-online.target
 After=network-online.target
@@ -383,7 +383,7 @@ WantedBy=multi-user.target
 
 ```ini
 [Unit]
-Description=Forge UI
+Description=Forge
 Documentation=https://docs.semaphoreui.com/
 Wants=network-online.target
 After=network-online.target

@@ -1,6 +1,6 @@
 # Table of contents
 
-* [Welcome to Forge UI](./README.md)
+* [Welcome to Forge](./README.md)
 
 * [Admin Guide](./administration-guide/README.md)
   <!-- * [Introduction](./administration-guide/introduction.md) -->

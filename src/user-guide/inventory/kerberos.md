@@ -51,7 +51,7 @@ This tells Ansible to **automatically acquire a Kerberos ticket** using the prov
 This verifies basic connectivity using WinRM + Kerberos.
 
 
-## Forge UI host requirements
+## Forge host requirements
 
 On the Forge host, install the following packages:
 

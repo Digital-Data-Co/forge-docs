@@ -88,7 +88,7 @@ docker run -d --name openldap \
   bitnami/openldap:latest
 ```
 
-Your LDAP configuration for Forge UI should be as follows:
+Your LDAP configuration for Forge should be as follows:
 
 ```json
 {

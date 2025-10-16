@@ -1,6 +1,6 @@
 # Runners
 
-Runners enable running tasks on a separate server from Forge UI.
+Runners enable running tasks on a separate server from Forge.
 
 Forge runners operate on the same principle as GitLab or GitHub Actions runners:
 

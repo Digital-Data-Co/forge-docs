@@ -144,4 +144,4 @@ When the number of tasks exceeds this limit, the oldest Task Logs are automatica
 - **Activity and tasks log:** Tracks all user actions. Optionally, **Pro 2.10+** can write these to a file.  
 - **Task history:** Stores real-time and historical task execution logs. Retention is configurable per template.
 
-Following these guidelines ensures you have proper visibility into Forge UI operations while controlling storage usage and log retention.
+Following these guidelines ensures you have proper visibility into Forge operations while controlling storage usage and log retention.

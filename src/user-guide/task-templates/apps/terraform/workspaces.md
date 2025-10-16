@@ -10,7 +10,7 @@ Forge provides built-in support for Terraform workspaces, allowing you to manage
 
 ## Features
 
-- **Workspace Management**: Create, switch, and delete workspaces directly from the Forge UI.
+- **Workspace Management**: Create, switch, and delete workspaces directly from the Forge.
 - **State Isolation**: Each workspace maintains its own state file, preventing conflicts between environments.
 - **Environment Variables**: Configure workspace-specific environment variables.
 - **Workspace Selection**: Choose the target workspace when running Terraform commands.

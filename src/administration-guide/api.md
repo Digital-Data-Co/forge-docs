@@ -2,10 +2,10 @@
 
 ## API reference
 
-Forge UI provides two formats of API documentation, so you can choose the one that fits your workflow best:
+Forge provides two formats of API documentation, so you can choose the one that fits your workflow best:
 
-* [Swagger/OpenAPI](https://semaphoreui.com/api-docs) &mdash; ideal if you prefer an interactive, browser-based experience.
-* [Official Postman Collection](https://www.postman.com/semaphoreui) &mdash; explore and test all endpoints in Postman.
+* [Swagger/OpenAPI](https://forge.dev/api-docs) &mdash; ideal if you prefer an interactive, browser-based experience.
+* [Official Postman Collection](https://www.postman.com/forge) &mdash; explore and test all endpoints in Postman.
 * **Built-in Swagger API documentation** &mdash; interactive API documentation powered by Swagger UI. You can access it on your instance.
 
   ![](<../.gitbook/assets/swagger-link.webp>)
@@ -40,7 +40,7 @@ You can also authenticate and generate a session token using a direct HTTP reque
 Login to Forge (password should be escaped, `slashy\\pass` instead of `slashy\pass` e.g.):
 
 ```bash
-curl -v -c /tmp/semaphore-cookie -XPOST \
+curl -v -c /tmp/forge-cookie -XPOST \
 -H 'Content-Type: application/json' \
 -H 'Accept: application/json' \
 -d '{"auth": "YOUR_LOGIN", "password": "YOUR_PASSWORD"}' \
@@ -50,7 +50,7 @@ http://localhost:3000/api/auth/login
 Generate a new token, and get the new token:
 
 ```bash
-curl -v -b /tmp/semaphore-cookie -XPOST \
+curl -v -b /tmp/forge-cookie -XPOST \
 -H 'Content-Type: application/json' \
 -H 'Accept: application/json' \
 http://localhost:3000/api/user/tokens

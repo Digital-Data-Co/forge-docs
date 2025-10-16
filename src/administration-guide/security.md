@@ -66,7 +66,7 @@ To ensure Forge is securely deployed:
     }
     ```
 
-- **Run behind a firewall**<br>Limit access to the Forge UI and database to only trusted IPs.
+- **Run behind a firewall**<br>Limit access to the Forge and database to only trusted IPs.
 
 - **Database security**<br>Use strong passwords and restrict database access to Forge only.
 

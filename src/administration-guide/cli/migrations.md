@@ -12,7 +12,7 @@ Database migrations allow you to update or roll back your Forge database schema 
 To see all available migration commands and options, run:
 
 ```
-semaphore migrations --help
+forge migrations --help
 ```
 
 ## Applying Migrations
@@ -22,7 +22,7 @@ semaphore migrations --help
 To apply all available migrations and bring your database up to date:
 
 ```
-semaphore migrate
+forge migrate
 ```
 
 ### Apply Migrations Up to a Specific Version
@@ -30,14 +30,14 @@ semaphore migrate
 To migrate your database schema up to a specific version, use:
 
 ```
-semaphore migrate --apply-to <version>
+forge migrate --apply-to <version>
 ```
 
 - `<version>`: The target migration version (e.g., `2.15` or `2.14.4`).
 
 **Example:**
 ```
-semaphore migrate --apply-to 2.15.1
+forge migrate --apply-to 2.15.1
 ```
 
 ## Rolling Back Migrations
@@ -45,14 +45,14 @@ semaphore migrate --apply-to 2.15.1
 To undo migrations and roll back your database schema to a previous version:
 
 ```
-semaphore migrate --undo-to <version>
+forge migrate --undo-to <version>
 ```
 
 - `<version>`: The migration version you want to roll back to (e.g., `2.13` or `2.14.4`).
 
 **Example:**
 ```
-semaphore migrate --undo-to 2.13
+forge migrate --undo-to 2.13
 ```
 
 ## Troubleshooting
