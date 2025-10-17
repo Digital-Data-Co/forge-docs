@@ -6,7 +6,7 @@
 
 # Network security
 
-For security reasons, Semaphore **should not be used** over unencrypted HTTP!
+For security reasons, Forge **should not be used** over unencrypted HTTP!
 
 Why use encrypted connections? See: [Article from Cloudflare](https://www.cloudflare.com/learning/ssl/why-use-https/).
 
@@ -19,11 +19,11 @@ Options you have:
 
 ## VPN
 
-You can use a Client-to-Site VPN, that terminates on the Semaphore server, to encrypt & secure the connection.
+You can use a Client-to-Site VPN, that terminates on the Forge server, to encrypt & secure the connection.
 
 ## SSL
 
-Semaphore supports SSL/TLS starting from v2.12.
+Forge supports SSL/TLS starting from v2.12.
 
 **config.json**:
 ```json
@@ -46,7 +46,7 @@ export SEMAPHORE_TLS_CERT_FILE=/path/to/cert/example.com.cert
 export SEMAPHORE_TLS_KEY_FILE=/path/to/key/example.com.key
 ```
 
-Alternatively, you can use a reverse proxy in front of Semaphore to handle secure connections. For example:
+Alternatively, you can use a reverse proxy in front of Forge to handle secure connections. For example:
 
 * [NGINX](./nginx.md)
 * [Apache](./apache.md)

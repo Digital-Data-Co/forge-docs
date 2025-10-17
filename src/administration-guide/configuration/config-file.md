@@ -3,17 +3,17 @@
 
 ## Creating configuration file
 
-Semaphore uses a `config.json` file for its core configuration. You can generate this file interactively using built-in tools or through a web-based configurator.
+Forge uses a `config.json` file for its core configuration. You can generate this file interactively using built-in tools or through a web-based configurator.
 
 ### Generate via CLI
 
 Use the following commands to generate the configuration file interactively:
 
-* For the Semaphore server:
+* For the Forge server:
   ```
   semaphore setup
   ```
-* For the Semaphore runner:
+* For the Forge runner:
   ```
   semaphore runner setup
   ```
@@ -31,7 +31,7 @@ Alternatively, you can use the web-based interactive configurator:
 
 ## Configuration file example
 
-Semaphore uses a `config.json` configuration file with following content:
+Forge uses a `config.json` configuration file with following content:
 
 ```javascript
 {
@@ -82,13 +82,13 @@ Semaphore uses a `config.json` configuration file with following content:
 
 ## Configuration file usage
 
-* For Semaphore server:
+* For Forge server:
 
 ```bash
 semaphore server --config ./config.json
 ```
 
-* For Semaphore runner:
+* For Forge runner:
 
 ```bash
 semaphore runner start --config ./config.json

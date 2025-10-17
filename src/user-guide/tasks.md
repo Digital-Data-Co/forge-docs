@@ -21,5 +21,5 @@ You'll notice that logs of previous runs of your tasks are available in the task
 
 However, by default, log retention is infinite.
 
-You can configure this by using the `max_tasks_per_template` parameter in `config.json` or the `SEMAPHORE_MAX_TASKS_PER_TEMPLATE` environment variable.
+You can configure this by using the `max_tasks_per_template` parameter in `config.json` or the `FORGE_MAX_TASKS_PER_TEMPLATE` environment variable.
 

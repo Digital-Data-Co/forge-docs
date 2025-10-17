@@ -5,7 +5,7 @@
 
 # Project runners (Pro)
 
-Project Runners are a powerful feature in Semaphore Pro that enables distributed task execution across multiple servers. This feature allows you to run tasks on separate servers from your Semaphore UI instance, providing enhanced security, scalability, and resource management.
+Project Runners are a powerful feature in Forge Pro that enables distributed task execution across multiple servers. This feature allows you to run tasks on separate servers from your Forge instance, providing enhanced security, scalability, and resource management.
 
 
 ![](<../../.gitbook/assets/project_runners.webp>)
@@ -15,10 +15,10 @@ Project Runners are a powerful feature in Semaphore Pro that enables distributed
 
 Project runners operate on a similar principle to GitLab or GitHub Actions runners:
 
-- A runner is deployed on a separate server from your Semaphore UI
-- The runner connects to your Semaphore instance using a secure token
-- When tasks are created, Semaphore delegates them to available runners
-- Runners execute the tasks and report results back to Semaphore
+- A runner is deployed on a separate server from your Forge
+- The runner connects to your Forge instance using a secure token
+- When tasks are created, Forge delegates them to available runners
+- Runners execute the tasks and report results back to Forge
 
 ## Benefits
 
@@ -45,14 +45,14 @@ Using runners provides several key advantages:
 
 To use runners, you need:
 
-1. A Semaphore Pro license
+1. A Forge Pro license
 2. A separate server for running the runner
-3. Network connectivity between the runner and Semaphore UI
-4. Proper configuration on both the Semaphore UI and runner servers
+3. Network connectivity between the runner and Forge
+4. Proper configuration on both the Forge and runner servers
 
 <!-- ### Configuration
 
-1. **Semaphore UI Configuration**
+1. **Forge Configuration**
   
 
 2. **Runner Setup** -->
@@ -60,7 +60,7 @@ To use runners, you need:
 
 ### Managing Runners
 
-You can manage runners through the Semaphore UI:
+You can manage runners through the Forge:
 
 1. Navigate to the Runners section in your project
 2. View all registered runners and their status
@@ -69,8 +69,8 @@ You can manage runners through the Semaphore UI:
 
 ### Security Considerations
 
-- Always use HTTPS for communication between runners and Semaphore UI
-- Implement proper network security between runners and Semaphore UI
+- Always use HTTPS for communication between runners and Forge
+- Implement proper network security between runners and Forge
 - Consider using isolated environments for sensitive operations
 
 ## Best Practices

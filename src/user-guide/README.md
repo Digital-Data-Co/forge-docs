@@ -1,6 +1,6 @@
 # User Guide
 
-Learn how to use Semaphore day-to-day: create projects, run tasks, manage inventories, keys, variables, and more.
+Learn how to use Forge day-to-day: create projects, run tasks, manage inventories, keys, variables, and more.
 
 ## Start here
 

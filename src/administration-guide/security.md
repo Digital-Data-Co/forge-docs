@@ -2,14 +2,14 @@
 
 ## Introduction
 
-Security is a top priority in Semaphore UI. Whether you're automating critical infrastructure tasks or managing team access to sensitive systems, Semaphore UI is designed to provide robust, secure operations out of the box. This section outlines how Semaphore handles security and what you should consider when deploying it in production.
+Security is a top priority in Forge. Whether you're automating critical infrastructure tasks or managing team access to sensitive systems, Forge is designed to provide robust, secure operations out of the box. This section outlines how Forge handles security and what you should consider when deploying it in production.
 
 ## Authentication & authorization
 
-Semaphore supports secure authentication and flexible authorization mechanisms:
+Forge supports secure authentication and flexible authorization mechanisms:
 
 - **Login methods:**
-  - **Username/password**<br>Default method using credentials stored in the Semaphore database. Passwords are hashed using a strong algorithm (bcrypt).
+  - **Username/password**<br>Default method using credentials stored in the Forge database. Passwords are hashed using a strong algorithm (bcrypt).
 
   - **LDAP**<br>Allows integration with enterprise directory services. Supports user/group filtering and secure connections via LDAPS.
 
@@ -35,23 +35,23 @@ Managing secrets securely is a core feature:
 
 ## Running untrusted code / playbooks
 
-Semaphore runs user-defined playbooks and commands, which can be risky:
+Forge runs user-defined playbooks and commands, which can be risky:
 
 - **Container isolation**<br>Tasks are executed in isolated Docker containers. These containers have no access to the host system.
 
 - **Least privilege**<br>Containers run with minimal permissions and can be restricted further using Docker flags.
 
-- **Chroot execution**<br>Semaphore can execute tasks inside a chroot jail to further isolate the execution environment from the host system.
+- **Chroot execution**<br>Forge can execute tasks inside a chroot jail to further isolate the execution environment from the host system.
 
-- **Task process user**<br>Tasks can be executed under a dedicated non-root system user (e.g., `semaphore`) to reduce the impact of potential exploits. This is optional and can be configured based on system policies.
+- **Task process user**<br>Tasks can be executed under a dedicated non-root system user (e.g., `forge`) to reduce the impact of potential exploits. This is optional and can be configured based on system policies.
 <!-- - **Resource Limits**: To prevent abuse, CPU and memory limits can be applied. -->
 
 ## Secure Deployment
 
-To ensure Semaphore is securely deployed:
+To ensure Forge is securely deployed:
 
 - **Use HTTPS**<br>
-    Semaphore supports HTTPS both via its **built-in TLS support** and through a **reverse proxy like Nginx**. It is strongly recommended to enable HTTPS in production.
+    Forge supports HTTPS both via its **built-in TLS support** and through a **reverse proxy like Nginx**. It is strongly recommended to enable HTTPS in production.
 
     To enable built-in HTTPS support add following block to **config.json**:
     ```json
@@ -66,9 +66,9 @@ To ensure Semaphore is securely deployed:
     }
     ```
 
-- **Run behind a firewall**<br>Limit access to the Semaphore UI and database to only trusted IPs.
+- **Run behind a firewall**<br>Limit access to the Forge and database to only trusted IPs.
 
-- **Database security**<br>Use strong passwords and restrict database access to Semaphore only.
+- **Database security**<br>Use strong passwords and restrict database access to Forge only.
 
 ## Updates & patch management
 
@@ -82,7 +82,7 @@ Security updates are published regularly:
 
 <!-- ## Audit Logs & Monitoring
 
-Semaphore provides basic audit logging:
+Forge provides basic audit logging:
 
 - **User Activity**: Logins, failed attempts, and task executions are logged.
 - **Configuration Changes**: Changes to settings, projects, and credentials are logged with timestamps.
@@ -92,7 +92,7 @@ Semaphore provides basic audit logging:
 
 To protect against data loss:
 
-- **What to Back Up**: Semaphore database, configuration file, and secret storage.
+- **What to Back Up**: Forge database, configuration file, and secret storage.
 - **How to Restore**: Follow the backup/restore guide in the admin docs.
 - **Testing**: Periodically test restoring backups in a staging environment. -->
 
@@ -105,7 +105,7 @@ To protect against data loss:
 
 <!-- ## Compliance & Data Privacy
 
-Semaphore collects minimal user data:
+Forge collects minimal user data:
 
 - **Data Handling**: Emails, IP logs, and session data are stored securely.
 - **User Deletion**: Admins can delete user accounts and associated data upon request.
@@ -113,9 +113,9 @@ Semaphore collects minimal user data:
 
 ## Reporting Vulnerabilities
 
-Found a vulnerability? Help us keep Semaphore secure:
+Found a vulnerability? Help us keep Forge secure:
 
-- **Responsible disclosure**<br>Please email us at `security@semaphoreui.com`.
+- **Responsible disclosure**<br>Please email us at `security@forge.com`.
  
 ### Vulnerability resolution targets
 

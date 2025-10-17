@@ -6,16 +6,16 @@
 
 # Workspaces
 
-Semaphore provides built-in support for Terraform workspaces, allowing you to manage multiple environments and configurations within a single project. This feature helps you maintain separate state files for different environments like development, staging, and production.
+Forge provides built-in support for Terraform workspaces, allowing you to manage multiple environments and configurations within a single project. This feature helps you maintain separate state files for different environments like development, staging, and production.
 
 ## Features
 
-- **Workspace Management**: Create, switch, and delete workspaces directly from the Semaphore UI.
+- **Workspace Management**: Create, switch, and delete workspaces directly from the Forge.
 - **State Isolation**: Each workspace maintains its own state file, preventing conflicts between environments.
 - **Environment Variables**: Configure workspace-specific environment variables.
 - **Workspace Selection**: Choose the target workspace when running Terraform commands.
 
-## Using Workspaces in Semaphore
+## Using Workspaces in Forge
 
 ### Creating a Workspace
 
@@ -37,4 +37,4 @@ You can set the default workspace for a Terraform/OpenTofu template by clicking 
 
 ### Workspace-specific variables
 
-Semaphore currently does not support workspace-specific variables.
+Forge currently does not support workspace-specific variables.

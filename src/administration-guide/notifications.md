@@ -1,6 +1,6 @@
 # Notifications
 
-Semaphore can send notifications about task and project activity to popular channels. Configure a global notifier in `config.json`, and (where supported) override certain options per project.
+Forge can send notifications about task and project activity to popular channels. Configure a global notifier in `config.json`, and (where supported) override certain options per project.
 
 Supported providers:
 
@@ -14,7 +14,7 @@ Supported providers:
 
 ## How it works
 
-- **Global configuration**: Enable a provider and set its connection options in `config.json` on the Semaphore server. See each provider page for the exact keys.
+- **Global configuration**: Enable a provider and set its connection options in `config.json` on the Forge server. See each provider page for the exact keys.
 - **Events**: Notifications are sent on key task lifecycle events (e.g., start, success, failure) and are posted to the configured channel/webhook.
 - **Per-project overrides**: Some providers allow per-project overrides. For example, Telegram supports a project-specific chat ID.
 

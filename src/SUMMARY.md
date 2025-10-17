@@ -1,6 +1,6 @@
 # Table of contents
 
-* [Welcome to Semaphore UI](./README.md)
+* [Welcome to Forge](./README.md)
 
 * [Admin Guide](./administration-guide/README.md)
   <!-- * [Introduction](./administration-guide/introduction.md) -->
@@ -59,6 +59,7 @@
 
 * [User Guide](./user-guide/README.md)
   * [Projects](./user-guide/projects.md)
+    * [Project Creation Guide](./user-guide/projects/project-creation-guide.md)
     * [History](./user-guide/projects/history.md)
     * [Activity](./user-guide/projects/activity.md)
     * [Settings](./user-guide/projects/settings.md)

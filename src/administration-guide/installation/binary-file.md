@@ -10,7 +10,7 @@
 </div>
 
 
-Download the `*.tar.gz` for your platform from [Releases page](https://github.com/semaphoreui/semaphore/releases). Unpack it and setup Semaphore using the following commands:
+Download the `*.tar.gz` for your platform from [Releases page](https://github.com/forge/semaphore/releases). Unpack it and setup Forge using the following commands:
 
 {{#tabs }}
 {{#tab name="Linux (x64)" }}
@@ -50,13 +50,13 @@ Expand-Archive -Path semaphore.zip  -DestinationPath ./
 {{#endtab }}
 {{#endtabs }}
 
-Now you can run Semaphore:
+Now you can run Forge:
 
 ```
 ./semaphore server --config=./config.json
 ```
 
-Semaphore will be available via the following URL [https://localhost:3000](https://localhost:3000).
+Forge will be available via the following URL [https://localhost:3000](https://localhost:3000).
 
 ----
 
@@ -64,7 +64,7 @@ Semaphore will be available via the following URL [https://localhost:3000](https
 
 For more detailed information &mdash; look into the [extended Systemd service documentation](../installation_manually.md#extended-systemd-service).
 
-If you installed Semaphore via a package manager, or by downloading a binary file, you should create the Semaphore service manually.
+If you installed Forge via a package manager, or by downloading a binary file, you should create the Forge service manually.
 
 Create the systemd service file:
 
@@ -75,7 +75,7 @@ Create the systemd service file:
 ```bash
 sudo cat > /etc/systemd/system/semaphore.service <<EOF
 [Unit]
-Description=Semaphore Ansible
+Description=Forge
 Documentation=https://github.com/semaphoreui/semaphore
 Wants=network-online.target
 After=network-online.target
@@ -93,20 +93,20 @@ WantedBy=multi-user.target
 EOF
 ```
 
-Start the Semaphore service:
+Start the Forge service:
 
 ```bash
 sudo systemctl daemon-reload
 sudo systemctl start semaphore
 ```
 
-Check the Semaphore service status:
+Check the Forge service status:
 
 ```bash
 sudo systemctl status semaphore
 ```
 
-To make the Semaphore service auto start:
+To make the Forge service auto start:
 
 ```bash
 sudo systemctl enable semaphore

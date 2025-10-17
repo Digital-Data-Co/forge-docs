@@ -1,27 +1,27 @@
-# Netbox Dynamic Inventory Integration with Semaphore
+# Netbox Dynamic Inventory Integration with Forge
 
 ![Ansible Badge](https://img.shields.io/badge/ansible-%23000.svg?style=for-the-badge&logo=ansible&logoColor=white)
 ![Netbox Badge](https://img.shields.io/badge/Netbox-%23F00.svg?style=for-the-badge&logo=netbox&logoColor=white)
-![Semaphore Badge](https://img.shields.io/badge/Semaphore-%23187EBB.svg?style=for-the-badge&logo=semaphore&logoColor=white)
+![Forge Badge](https://img.shields.io/badge/Forge-%23187EBB.svg?style=for-the-badge&logo=digitaldata&logoColor=white)
 
 ## 🛠 Key Features
 
-This repository demonstrates the use of the `netbox.netbox.nb_inventory` plugin to create a dynamic inventory in Semaphore. It enables automatic synchronization of data from Netbox, simplifying the management of your infrastructure and the execution of Ansible playbooks.
+This repository demonstrates the use of the `netbox.netbox.nb_inventory` plugin to create a dynamic inventory in Forge. It enables automatic synchronization of data from Netbox, simplifying the management of your infrastructure and the execution of Ansible playbooks.
 
 ## 🔧 Setup
 
 ### Requirements
 
-- Access to Semaphore
+- Access to Forge
 - Access to Netbox with configured API
 
 ### 🔑 Netbox Setup
 
 Ensure your Netbox is configured and accessible for API interaction. Obtain an API token which will be used to authenticate requests.
 
-### 📡 Configuration in Semaphore
+### 📡 Configuration in Forge
 
-1. In Semaphore, go to the inventory section.
+1. In Forge, go to the inventory section.
 2. Create a new inventory.
 3. Enter the following settings for the plugin configuration:
 
@@ -37,7 +37,7 @@ Ensure your Netbox is configured and accessible for API interaction. Obtain an A
 
 ## 🚀 Usage
 
-Once configured, you can run Ansible playbooks in Semaphore using the dynamic inventory which automatically updates host data from your Netbox.
+Once configured, you can run Ansible playbooks in Forge using the dynamic inventory which automatically updates host data from your Netbox.
 
 ## 📚 Further Documentation
 
