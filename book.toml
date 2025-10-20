@@ -1,6 +1,9 @@
 [book]
 <<<<<<< HEAD
 authors = ["Digital Data Co"]
+=======
+authors = ["DigitalData"]
+>>>>>>> f99305e29bac1ee9abce0072664df4df5c0d5ca7
 language = "en"
 multilingual = false
 src = "src"
