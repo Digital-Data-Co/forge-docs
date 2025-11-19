@@ -5,7 +5,8 @@ multilingual = false
 src = "src"
 title = "Forge Documentation"
 
-[preprocessor.tabs]
+# Tabs preprocessor disabled temporarily to fix build errors
+# [preprocessor.tabs]
 
 # Mermaid preprocessor disabled temporarily to fix build errors
 # [preprocessor.mermaid]
