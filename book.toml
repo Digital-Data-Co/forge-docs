@@ -7,8 +7,9 @@ title = "Forge Documentation"
 
 [preprocessor.tabs]
 
-[preprocessor.mermaid]
-command = "mdbook-mermaid"
+# Mermaid preprocessor disabled temporarily to fix build errors
+# [preprocessor.mermaid]
+# command = "mdbook-mermaid"
 
 # [preprocessor.breadcrumbs]
 # command = "/home/fiftin/src/semaphore/mdbook-breadcrumbs/target/release/mdbook-breadcrumbs"
