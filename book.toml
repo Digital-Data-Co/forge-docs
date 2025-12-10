@@ -1,18 +1,16 @@
 [book]
-<<<<<<< HEAD
 authors = ["Digital Data Co"]
-=======
-authors = ["DigitalData"]
->>>>>>> f99305e29bac1ee9abce0072664df4df5c0d5ca7
 language = "en"
 multilingual = false
 src = "src"
 title = "Forge Documentation"
 
-[preprocessor.tabs]
+# Tabs preprocessor disabled temporarily to fix build errors
+# [preprocessor.tabs]
 
-[preprocessor.mermaid]
-command = "mdbook-mermaid"
+# Mermaid preprocessor disabled temporarily to fix build errors
+# [preprocessor.mermaid]
+# command = "mdbook-mermaid"
 
 # [preprocessor.breadcrumbs]
 # command = "/home/fiftin/src/semaphore/mdbook-breadcrumbs/target/release/mdbook-breadcrumbs"
@@ -20,15 +18,10 @@ command = "mdbook-mermaid"
 [output.html]
 additional-css = ["theme/tabs.css", "theme/search.css", "theme/content.css", "theme/header.css"]
 additional-js = ["theme/tabs.js"] # "mermaid.min.js", "mermaid-init.js"
-<<<<<<< HEAD
-edit-url-template = "https://github.com/Digital-Data-Co/forge-docs/edit/main/{path}"
-site-url = "https://docs.digitaldata.co"
-=======
-google-analytics = "G-SXDFVHLVBM"
 edit-url-template = "https://github.com/Digital-Data-Co/forge-docs/edit/main/{path}"
 site-url = "https://digital-data-co.github.io/forge-docs"
+google-analytics = "G-SXDFVHLVBM"
 default-theme = "light"
->>>>>>> f99305e29bac1ee9abce0072664df4df5c0d5ca7
 
 [output.html.search]
 enable = true
