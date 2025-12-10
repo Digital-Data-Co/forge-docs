@@ -21,4 +21,13 @@ Comprehensive compliance automation for VMware environments including vSphere, E
 - **Detailed Reporting**: View compliance status and rule results
 - **Remediation**: Automated security hardening and remediation
 - **Multi-Framework Support**: DISA STIG, CIS Benchmarks, and custom profiles
+- **Compliance Dashboard**: Real-time visibility into compliance posture
+- **Policy Pack Library**: Curated compliance policy packs for quick deployment
+- **Patch Management**: Identify and apply security patches
+
+## Documentation
+
+- [Compliance Dashboard](./dashboard.md) - Real-time compliance monitoring and reporting
+- [Remediation](./remediation.md) - Automated and manual remediation steps
+- [Policy Pack Library](./policy-packs.md) - Pre-configured compliance policy packs
 
